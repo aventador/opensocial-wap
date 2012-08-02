@@ -42,7 +42,7 @@ module OpensocialWap
         if container_url[-1] == "/"
           container_url = container_url[0..-2]
         end
-        "#{container_url}/#{app_id}/#{query_url_for(url, params)}"
+        "#{container_url}/#{app_id}#{query_url_for(url, params)}"
       end
 
       # URLのうち、プロトコルとホストからなる部分を返す.
